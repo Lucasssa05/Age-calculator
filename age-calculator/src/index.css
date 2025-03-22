@@ -1,0 +1,145 @@
+/* Corpo da página */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7fafc;
+  display: flex;
+  justify-content: center;  /* Centraliza horizontalmente */
+  align-items: center;      /* Centraliza verticalmente */
+  min-height: 100vh;
+  background-image: linear-gradient(to right, #00bcd4, #3f51b5); /* Gradiente no fundo */
+  color: #3f51b5;
+  font-weight: bold;
+  font-size: 1.5rem;
+
+}
+
+/* Centralização e estilo da caixa da calculadora */
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.bg-white {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Sombra mais forte */
+  max-width: 24rem;
+  width: 100%;
+  animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Título */
+.text-xl {
+  font-size: 1.5rem;
+  color: #3f51b5; /* Cor vibrante para o título */
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Estilo para inputs */
+input[type="number"] {
+  border: 2px solid #00bcd4;
+  padding: 0.75rem;
+  width: 30%;
+  border-radius: 0.75rem;
+  margin-bottom: 1.25rem;
+  font-size: 1.25rem;
+  text-align: center;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  background-color: #f0f7ff; /* Cor de fundo sutil */
+}
+
+input[type="number"]:focus {
+  outline: none;
+  border-color: #3f51b5;
+  transform: scale(1.05); /* Leve zoom quando em foco */
+}
+
+input[type="number"]:hover {
+  border-color: #00bcd4;
+  background-color: #e1f5fe; /* Fundo claro ao passar o mouse */
+}
+
+/* Estilo para o botão */
+button {
+  background-color: #3f51b5;
+  color: white;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 1.25rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #5c6bc0;
+  transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Mensagens de erro */
+.text-red-500 {
+  color: #f44336; /* Cor de erro vibrante */
+  font-weight: bold;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* Estilo para exibição da idade calculada */
+.animated {
+  display: inline-block;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animated span {
+  font-size: 1.5rem;
+  color: #3f51b5; /* Cor vibrante para os números */
+  font-weight: bold;
+}
+
+/* Estilo para a exibição de idade */
+.mt-4 {
+  margin-top: 1.5rem;
+  text-align: center;
+  }
+
+/* Melhorando a visibilidade do resultado */
+strong {
+  font-size: 1.5rem;
+  color: #3f51b5; /* Cor vibrante para os números */
+  font-weight: bold;
+}
