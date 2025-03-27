@@ -1,18 +1,21 @@
 /* Corpo da página */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f7fafc;
   display: flex;
-  justify-content: center;  /* Centraliza horizontalmente */
-  align-items: center;      /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
   min-height: 100vh;
-  background-image: linear-gradient(to right, #00bcd4, #3f51b5); /* Gradiente no fundo */
+  background-image: linear-gradient(
+    to right,
+    #00bcd4,
+    #3f51b5
+  ); /* Gradiente no fundo */
   color: #3f51b5;
   font-weight: bold;
   font-size: 1.5rem;
-
 }
 
 /* Centralização e estilo da caixa da calculadora */
@@ -111,7 +114,10 @@ button:focus {
 /* Estilo para exibição da idade calculada */
 .animated {
   display: inline-block;
+  display: flex;
   animation: fadeIn 1s ease-in-out;
+  justify-content: center;
+  align-items: center;
 }
 
 @keyframes fadeIn {
@@ -135,7 +141,7 @@ button:focus {
 .mt-4 {
   margin-top: 1.5rem;
   text-align: center;
-  }
+}
 
 /* Melhorando a visibilidade do resultado */
 strong {
